@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "Luumi",
   "private": true,
   "scripts": {
     "build": "turbo build",
