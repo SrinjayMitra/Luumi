@@ -11,11 +11,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Install Dependencies
         run: |
-          cd apps/web && pnpm install
-          cd apps/http-backend && pnpm install
+          cd ./apps/web && pnpm install
+          cd ./apps/http-backend && pnpm install
       - name: Build Next.js
         run: |
-          cd apps/web && pnpm run build
+          cd ./apps/web && pnpm run build
       - name: Deploy to AWS
         uses: appleboy/ssh-action@v0.1.7
         with:
