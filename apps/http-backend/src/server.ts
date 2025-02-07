@@ -1,6 +1,7 @@
 import express  from "express";
 import cors from "cors";
-import { prismaClient } from "@repo/db/PrismaClient";
+// import { prismaClient } from "@repo/db/client";
+const { prismaClient }: any = require("@repo/db/client");
 
 const app = express(); 
 const port = 3001;
@@ -10,9 +11,9 @@ app.use(cors());
 app.get('/api/hello/', async (req, res) => {
   const db = await prismaClient.user.create({
       data:{
-        name:"n",
-        email:"n@example.com",
-        password:"n",
+        name:"nn",
+        email:"nn@example.com",
+        password:"nn",
       }
   })
 
