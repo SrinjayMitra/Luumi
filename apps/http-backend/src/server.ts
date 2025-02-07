@@ -18,7 +18,7 @@ app.get('/api/hello/', async (req:Request, res:Response) => {
       }
   })
 
-    res.status(201).json({
+  (res as express.Response).status(201).json({
         mssg:"hello"})});
 
 app.listen(port,()=>{
