@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@repo/typescript-config": "workspace:*",
+    "@repo/db": "workspace:*",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "cors": "^2.8.5",
