@@ -1,4 +1,5 @@
-import express,{Request,Response}  from "express";
+import express  from "express";
+import {Request,Response} from "express";
 import cors from "cors";
 // import { prismaClient } from "@repo/db/client";
 const { prismaClient }: any = require("@repo/db/client");
@@ -17,7 +18,7 @@ app.get('/api/hello/', async (req:Request, res:Response) => {
       }
   })
 
-    res.json({
+    res.status(201).json({
         mssg:"hello"})});
 
 app.listen(port,()=>{
