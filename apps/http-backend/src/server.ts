@@ -10,6 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get('/api/hello/', async (req:Request, res:Response) => {
+
   const db = await prismaClient.user.create({
       data:{
         name:"nn",
@@ -18,7 +19,7 @@ app.get('/api/hello/', async (req:Request, res:Response) => {
       }
   })
 
-  (res as express.Response).status(201).json({
+  res.status(201).json({
         mssg:"hello"})});
 
 app.listen(port,()=>{
