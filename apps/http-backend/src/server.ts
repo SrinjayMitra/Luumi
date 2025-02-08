@@ -11,13 +11,13 @@ app.use(cors());
 
 app.get('/api/hello/', async (req:Request, res:Response) => {
 
-  const db = await prismaClient.user.create({
-      data:{
-        name:"nn",
-        email:"nn@example.com",
-        password:"nn",
-      }
-  })
+//   const db = await prismaClient.user.create({
+//       data:{
+//         name:"nn",
+//         email:"nn@example.com",
+//         password:"nn",
+//       }
+//   })
 
   res.status(201).json({
         mssg:"hello"})});
